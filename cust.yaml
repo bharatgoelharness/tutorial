@@ -6310,7 +6310,7 @@ paths:
         connectionType: "VPC_LINK"
         requestParameters:
           integration.request.header.Accept: "'application/json'"
-        uri: https://card-transaction-proxy-service.gibdev-internal.com/api/v1/cards/ehi
+        uri: https://chello.com/api/v1/cards/ehi
         responses:
           "200":
             statusCode: "200"
