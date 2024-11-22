@@ -19,6 +19,7 @@ variable "replicas" {
 resource "aws_api_gateway_rest_api" "rest_api" {
   name        = "example-rest-api"
   description = "This is an example REST API"
-  value = templatefile("cust.yaml", {})
+
+  body = templatefile("cust.yaml", {})
 
 }
