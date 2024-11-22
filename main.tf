@@ -15,7 +15,9 @@ variable "replicas" {
 }
 
 # Use templatefile to load and render the YAML template
-output "rendered_yaml" {
-  value = templatefile("cust.yaml", {})
-}
 
+resource "aws_api_gateway_rest_api" "rest_api" {
+
+  value = templatefile("cust.yaml", {})
+
+}
