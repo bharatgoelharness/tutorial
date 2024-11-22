@@ -13,7 +13,9 @@ variable "environment" {
 variable "replicas" {
   default = 3
 }
-
+provider "aws" {
+  region  = "us-east-1"  # Replace with your desired AWS region
+}
 # Use templatefile to load and render the YAML template
 
 resource "aws_api_gateway_rest_api" "rest_api" {
